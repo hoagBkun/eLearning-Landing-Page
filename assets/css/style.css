@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+.header {
+    margin-top: 35px;
+}
+
+.header .row {
+    padding: 16px 0;
+}
+
+.header.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0 39px;
+}
+
+.nav__item a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.nav__item:hover a {
+    text-shadow: 1px 0 0 #2f3a3b;
+}
+
+.auth-actions a {
+    color: #494949;
+    font-size: 1.6rem;
+}
+
+.auth-actions .btn-auth {
+    padding: 12px 23px;
+    margin-left: 24px;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.auth-actions .btn-auth:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 44px;
+    padding-bottom: 79px;
+}
+
+.hero .info {
+    width: 39.15%;
+}
+
+.hero .slogan {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .title {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+.hero .desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.77; /* 177.778% */
+}
+
+.hero .btn {
+    margin-top: 52px;
+}
+
+.play-vd {
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.play-vd:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.play-vd .icon {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap .images {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.benefits {
+    position: absolute;
+    top: 149px;
+    right: 459px;
+    display: inline-block;
+    padding: 17px 25px 18px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.book-icon {
+    position: relative;
+    background: #ff8282;
+    width: 36px;
+    height: 40px;
+    border-radius: 6px 4px 4px 6px;
+}
+
+.book-icon::before {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+    content: "";
+    display: block;
+    height: 4px;
+    background: #fff;
+    border-radius: 999px;
+}
+
+.benefits span {
+    margin-left: 16px;
+    width: 55px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.schedule {
+    position: absolute;
+    bottom: 46px;
+    right: 517px;
+    width: 124px;
+    height: 132px;
+    padding: 16px 25px;
+    text-align: center;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.schedule p {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.schedule img:first-of-type {
+    margin-top: 16px;
+}
+
+.schedule img:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+.schedule img:nth-of-type(3) {
+    margin-top: 10px;
+}
+
+.schedule img:last-of-type {
+    margin-top: 16px;
+}
+
+.active-studs {
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    width: 207px;
+    height: 90px;
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.active-studs {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.avt-group .avt:first-child {
+    margin-left: 0;
+}
+
+.avt-group .avt {
+    margin: 8px 0 0 -7px;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+/* Features */
+
+.feature {
+    margin-top: 130px;
+}
+
+.page-name {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.feature .desc {
+    width: 590px;
+}
+
+.feature .list {
+    display: flex;
+    margin-top: 80px;
+}
+
+.feature .item:first-child {
+    width: 168px;
+    margin-right: 209px;
+}
+
+.feature .item:nth-child(2) {
+    width: 223px;
+    margin-right: 200px;
+}
+
+.feature .item:last-child {
+    width: 224px;
+}
+
+.feature .item .title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature .item .desc {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 1.6rem;
+}
+
+/* courses */
+.course {
+    margin-top: 130px;
+    padding-bottom: 124px;
+}
+
+.course .desc {
+    width: 525px;
+    margin-top: 19px;
+    line-height: 1.778;
+}
+
+.course .all-link {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.course .all-link:hover {
+    opacity: 0.8;
+}
+
+.course .list {
+    margin-top: 79px;
+    gap: 47px;
+}
+
+.course .item {
+    position: relative;
+    width: calc(100% / 3);
+}
+
+.course .item .images {
+    width: 100%;
+    height: 393px;
+    border-radius: 8px;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+.course .info {
+    position: absolute;
+    top: 322px;
+    left: 17px;
+    right: 17px;
+    padding: 18px 25px 29px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course .info .title {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.course .info .desc {
+    margin-top: 6px;
+    width: 100%;
+    color: #9da6a5;
+    font-size: 1.4rem;
+
+    line-height: normal;
+}
+
+.course .info .row {
+    margin-top: 18px;
+    gap: 0 10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.course .info .status {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.course .info .status::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* popular */
+
+.popular {
+    margin-top: 265px;
+}
+
+.popular .container {
+    width: 862px;
+}
+
+.popular .qty {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Feedback */
+
+.feedback {
+    margin-top: 264px;
+}
+
+.feedback .section {
+    width: 419px;
+}
+
+.feedback .quote {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 1.5; /* 150% */
+}
+
+.feedback .author {
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+.feedback .author b {
+    color: #070707;
+    font-weight: 500;
+}
+
+.control {
+    margin-top: 52px;
+    gap: 0 30px;
+}
+
+.control .chevron {
+    background: var(--primary-color);
+    padding: 17px 22px;
+    border-radius: 50%;
+}
+
+.control .chevron:hover {
+    opacity: 0.8;
+}
+
+.control .icon {
+    color: #fff;
+}
+
+.feedback .avt-group {
+    margin-left: auto;
+    width: calc(100% - 491px);
+    height: 481px;
+    position: relative;
+}
+
+.feedback .avt-group .author-avt {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .avt-group .avt-center {
+    position: absolute;
+    top: 107px;
+    right: 170px;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback .avt-group .avt-right-top {
+    position: absolute;
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.feedback .avt-group .avt-right-bottom {
+    position: absolute;
+    right: 32px;
+    bottom: 29px;
+    width: 78px;
+    height: 78px;
+}
+
+.feedback .avt-group .avt-left-top {
+    position: absolute;
+    top: 0;
+    left: 144px;
+    width: 92px;
+    height: 92px;
+}
+
+.feedback .avt-group .avt-left {
+    position: absolute;
+    top: 258px;
+    left: 0;
+    width: 78px;
+    height: 78px;
+}
+
+.feedback .avt-group .avt-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 212px;
+    width: 78px;
+    height: 78px;
+}

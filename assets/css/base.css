@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #1ebfc1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row--between {
+    justify-content: space-between;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    width: 186px;
+    padding: 25px 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.sub-title {
+    margin-top: 18px;
+    width: 577px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Actions */
+
+.action {
+    margin-top: 130px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.action .sub-title {
+    color: #070707;
+}
+
+.action .btn {
+    margin-left: 410px;
+    background: #2ac9bf;
+}
+
+/* Footer */
+
+.footer {
+    padding: 130px 0 50px;
+}
+
+.footer .row {
+    align-items: flex-start;
+}
+
+.footer .col:first-child {
+    margin-right: 144px;
+}
+
+.footer .col:nth-child(2) {
+    margin-right: 144px;
+}
+
+.footer .col:nth-child(3) {
+    margin-right: 148px;
+}
+
+.footer .col:last-child {
+    margin-left: auto;
+}
+
+.footer .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .list {
+    margin-top: 25px;
+}
+
+.footer .item {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0 9px;
+}
+
+.footer .item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer .item:hover a {
+    opacity: 0.9;
+}
+
+.footer .icon {
+    padding: 5.5px 4.5px;
+}
+
+.copyright {
+    margin-top: 80px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
